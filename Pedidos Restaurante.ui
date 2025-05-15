@@ -1,0 +1,574 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1115</width>
+    <height>1004</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="TITULO1">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>10</y>
+      <width>321</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>PLATAFORMA DE PEDIDO DE RESTAURANTE</string>
+    </property>
+   </widget>
+   <widget class="QScrollArea" name="scrollArea_2">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>80</y>
+      <width>991</width>
+      <height>571</height>
+     </rect>
+    </property>
+    <property name="verticalScrollBarPolicy">
+     <enum>Qt::ScrollBarAlwaysOn</enum>
+    </property>
+    <property name="widgetResizable">
+     <bool>true</bool>
+    </property>
+    <widget class="QWidget" name="scrollAreaWidgetContents_2">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>966</width>
+       <height>569</height>
+      </rect>
+     </property>
+     <widget class="QWidget" name="verticalLayoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>10</y>
+        <width>951</width>
+        <height>854</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <item>
+          <widget class="QLabel" name="imgPlato1_2">
+           <property name="text">
+            <string>--</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="nombrePlato1_2">
+           <property name="text">
+            <string>Nombre Plato</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="precioPlato1_2">
+           <property name="text">
+            <string>Precio</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_15">
+           <item>
+            <widget class="QPushButton" name="btnAadir1_2">
+             <property name="text">
+              <string>Añadir</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="btnEliminar1_2">
+             <property name="text">
+              <string>Eliminar</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_16">
+         <item>
+          <widget class="QLabel" name="imgPlato2_3">
+           <property name="text">
+            <string>--</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="nombrePlato2_3">
+           <property name="text">
+            <string>Nombre Plato</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="precioPlato2_3">
+           <property name="text">
+            <string>Precio</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_16">
+           <item>
+            <widget class="QPushButton" name="btnAadir2_3">
+             <property name="text">
+              <string>Añadir</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="btnEliminar2_3">
+             <property name="text">
+              <string>Eliminar</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_17">
+         <item>
+          <widget class="QLabel" name="imgPlato3_2">
+           <property name="text">
+            <string>--</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="nombrePlato3_2">
+           <property name="text">
+            <string>Nombre Plato</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="precioPlato3_2">
+           <property name="text">
+            <string>Precio</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_17">
+           <item>
+            <widget class="QPushButton" name="btnAadir3_2">
+             <property name="text">
+              <string>Añadir</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="btnEliminar3_2">
+             <property name="text">
+              <string>Eliminar</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_18">
+         <item>
+          <widget class="QLabel" name="imgPlato4_2">
+           <property name="text">
+            <string>--</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="nombrePlato4_2">
+           <property name="text">
+            <string>Nombre Plato</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="precioPlato4_2">
+           <property name="text">
+            <string>Precio</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_18">
+           <item>
+            <widget class="QPushButton" name="btnAadir4_2">
+             <property name="text">
+              <string>Añadir</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="btnEliminar4_2">
+             <property name="text">
+              <string>Eliminar</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_19">
+         <item>
+          <widget class="QLabel" name="imgPlato5_8">
+           <property name="text">
+            <string>--</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="nombrePlato5_8">
+           <property name="text">
+            <string>Nombre Plato</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="precioPlato5_8">
+           <property name="text">
+            <string>Precio</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_19">
+           <item>
+            <widget class="QPushButton" name="btnAadir5_8">
+             <property name="text">
+              <string>Añadir</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="btnEliminar5_8">
+             <property name="text">
+              <string>Eliminar</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_20">
+         <item>
+          <widget class="QLabel" name="imgPlato5_9">
+           <property name="text">
+            <string>--</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="nombrePlato5_9">
+           <property name="text">
+            <string>Nombre Plato</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="precioPlato5_9">
+           <property name="text">
+            <string>Precio</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_20">
+           <item>
+            <widget class="QPushButton" name="btnAadir5_9">
+             <property name="text">
+              <string>Añadir</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="btnEliminar5_9">
+             <property name="text">
+              <string>Eliminar</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_21">
+         <item>
+          <widget class="QLabel" name="imgPlato6">
+           <property name="text">
+            <string>--</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="nombrePlato6">
+           <property name="text">
+            <string>Nombre Plato</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="precioPlato6">
+           <property name="text">
+            <string>Precio</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_21">
+           <item>
+            <widget class="QPushButton" name="btnAadir6">
+             <property name="text">
+              <string>Añadir</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="btnEliminar6">
+             <property name="text">
+              <string>Eliminar</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_22">
+         <item>
+          <widget class="QLabel" name="imgPlato7">
+           <property name="text">
+            <string>--</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="nombrePlato7">
+           <property name="text">
+            <string>Nombre Plato</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="precioPlato7">
+           <property name="text">
+            <string>Precio</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_22">
+           <item>
+            <widget class="QPushButton" name="btnAadir7">
+             <property name="text">
+              <string>Añadir</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="btnEliminar7">
+             <property name="text">
+              <string>Eliminar</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_23">
+         <item>
+          <widget class="QLabel" name="imgPlat8">
+           <property name="text">
+            <string>--</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="nombrePlato8">
+           <property name="text">
+            <string>Nombre Plato</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="precioPlato8">
+           <property name="text">
+            <string>Precio</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_23">
+           <item>
+            <widget class="QPushButton" name="btnAadir8">
+             <property name="text">
+              <string>Añadir</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="btnEliminar8">
+             <property name="text">
+              <string>Eliminar</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_24">
+         <item>
+          <widget class="QLabel" name="imgPlato9">
+           <property name="text">
+            <string>--</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="nombrePlato9">
+           <property name="text">
+            <string>Nombre Plato</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="precioPlato9">
+           <property name="text">
+            <string>Precio</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_24">
+           <item>
+            <widget class="QPushButton" name="btnAadir9">
+             <property name="text">
+              <string>Añadir</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="btnEliminar9">
+             <property name="text">
+              <string>Eliminar</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_25">
+         <item>
+          <widget class="QLabel" name="imgPlato10">
+           <property name="text">
+            <string>--</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="nombrePlato10">
+           <property name="text">
+            <string>Nombre Plato</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="precioPlato10">
+           <property name="text">
+            <string>Precio</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_25">
+           <item>
+            <widget class="QPushButton" name="btnAadir10">
+             <property name="text">
+              <string>Añadir</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="btnEliminar10">
+             <property name="text">
+              <string>Eliminar</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1115</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuPantalla_principal">
+    <property name="title">
+     <string>Pantalla principal</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuPantalla_Carrito">
+    <property name="title">
+     <string>Pantalla Carrito</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuprueba">
+    <property name="title">
+     <string>prueba</string>
+    </property>
+   </widget>
+   <addaction name="menuPantalla_principal"/>
+   <addaction name="menuPantalla_Carrito"/>
+   <addaction name="menuprueba"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
