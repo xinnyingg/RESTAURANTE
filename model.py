@@ -1,23 +1,69 @@
 # model.py
+
+# Definimos una clase para representar cada plato del menú
 class Dish:
-    def __init__(self, name: str, price: float, image_path: str):
-        self.name = name
-        self.price = price
-        self.image_path = image_path
+    def __init__(self, name: str, price: float):
+        # Guarda el nombre del plato
+        self.name     = name
+        # Guarda el precio unitario del plato
+        self.price    = price
+        # Inicializa la cantidad pedida de este plato a cero
         self.quantity = 0
 
+
+# Definimos la clase que maneja todos los datos del pedido
 class OrderModel:
     def __init__(self):
-        # Rellena con las 7 rutas y datos de tus imágenes
+        # Creamos una lista de objetos Dish con los platos disponibles
         self.dishes = [
-            Dish("Lasagna", 15.0, "images/lasagna.jpg"),
-            Dish("Spaghetti Carbonara", 10.0, "images/carbonara.jpg"),
-            Dish("Risotto alla Milanese", 10.0, "images/risotto.jpg"),
-            Dish("Fettuccine Alfredo", 10.0, "images/alfredo.jpg"),
-            Dish("Ravioli", 8.0, "images/ravioli.jpg"),
-            Dish("Minestrone", 12.0, "images/minestrone.jpg"),
-            Dish("Pizza Margherita", 10.0, "images/cheesecake.jpg"),
+            Dish("Lasagna", 15.0),
+            Dish("Spaghetti Carbonara", 10.0),
+            Dish("Risotto alla Milanese", 10.0),
+            Dish("Fettuccine Alfredo", 10.0),
+            Dish("Ravioli", 8.0),
+            Dish("Minestrone", 12.0),
+            Dish("Pizza Margherita", 10.0),
         ]
+        # Inicialmente no hay ningún pedido en el historial
+        # Lo guardaremos como una lista de diccionarios
+        self.history = []
 
     def total(self) -> float:
-        return sum(d.price * d.quantity for d in self.dishes)
+        """
+        Calcula el precio total del pedido actual.
+        Recorre cada plato (Dish) y suma price * quantity.
+        """
+        return sum(
+            d.price * d.quantity  # coste de cada plato = precio × unidades pedidas
+            for d in self.dishes  # para cada Dish en la lista
+        )
+
+    def add_order(self):
+        """
+        Guarda el pedido actual en el historial:
+        1) Filtra solo los platos con quantity > 0.
+        2) Construye una lista de tuplas (nombre, cantidad).
+        3) Calcula el total con self.total().
+        4) Añade un dict al self.history.
+        """
+        # Paso 1 y 2: creamos lista de (nombre, cantidad) solo si se pidió algo
+        items = [
+            (d.name, d.quantity)        # tupla con nombre y cantidad
+            for d in self.dishes        # recorre todos los platos
+            if d.quantity > 0           # y filtra los que tienen qty > 0
+        ]
+        # Paso 3: calculamos el total
+        total = self.total()
+        # Paso 4: guardamos en el historial un diccionario con items y total
+        self.history.append({
+            "items": items,  # lista de (nombre, qty)
+            "total": total   # importe total del pedido
+        })
+
+    def reset(self):
+        """
+        Vuelve todas las cantidades a cero después de concretar un pedido,
+        para preparar un nuevo pedido sin restos del anterior.
+        """
+        for d in self.dishes:  # recorre cada Dish
+            d.quantity = 0      # y pone su cantidad a 0
