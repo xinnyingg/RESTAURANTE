@@ -140,7 +140,7 @@
           <property name="geometry">
            <rect>
             <x>0</x>
-            <y>-164</y>
+            <y>0</y>
             <width>1144</width>
             <height>750</height>
            </rect>
@@ -1083,7 +1083,9 @@
       </property>
       <property name="font">
        <font>
-        <pointsize>9</pointsize>
+        <pointsize>8</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
        </font>
       </property>
       <property name="text">
@@ -1091,15 +1093,13 @@
 
 Bienvenido a nuestra aplicación de pedidos del restaurante.
 
-Me llamo Xinying, y junto con mi compañera Anjue, hemos creado esta plataforma para que puedas hacer tus pedidos de forma rápida, clara y cómoda.
+La aplicación funciona de la siguiente manera:
 
-¿Cómo funciona? Muy fácil:
-
-  - En la pestaña Realizar Pedido, verás una lista de nuestros platos con su imagen, nombre, precio y botones para añadir o quitar unidades.
+  - En la pestaña Realizar Pedido, verás una lista de nuestros platos con su imagen, nombre, precio, botones para añadir o quitar unidades y las cantidades añadidas.
 
   - A medida que vas añadiendo platos, el precio total se actualiza automáticamente en la parte inferior.
 
-  - Una vez tengas todo listo, pulsa el botón “Realizar pedido”. Si no has seleccionado nada, te avisaremos para que no te olvides de elegir tus platos deseados😉.
+  - Una vez tengas todo listo, pulsa el botón “Realizar pedido”. Si no has seleccionado nada, te avisaremos para que no te olvides de elegir tus platos deseados.😉
 
   - Tras confirmar tu pedido, lo verás registrado en la pestaña Historial, donde podrás revisar lo que pediste y cuánto pagaste.
 
