@@ -1,6 +1,9 @@
 # model.py
 
-# Definimos una clase para representar cada plato del menú
+"""
+Esta clase representa cada plato del menú, con su nombre,
+precio unitario y la cantidad que el cliente ha pedido.
+"""
 class Dish:
     def __init__(self, name: str, price: float):
         # Guarda el nombre del plato
@@ -12,6 +15,12 @@ class Dish:
 
 
 # Definimos la clase que maneja todos los datos del pedido
+"""
+Esta clase maneja todos los datos de los pedidos:
+ - lista de platos disponibles (Dish)
+ - historial de pedidos realizados
+ - cálculo de precios totales
+"""
 class OrderModel:
     def __init__(self):
         # Creamos una lista de objetos Dish con los platos disponibles
@@ -24,8 +33,7 @@ class OrderModel:
             Dish("Minestrone", 12.0),
             Dish("Pizza Margherita", 10.0),
         ]
-        # Inicialmente no hay ningún pedido en el historial
-        # Lo guardaremos como una lista de diccionarios
+        # Inicialmente no hay ningún pedido en el historial, guardaremos como una lista de diccionarios
         self.history = []
 
     def total(self) -> float:
