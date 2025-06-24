@@ -1,8 +1,7 @@
 # model.py
 
 """
-Esta clase representa cada plato del menú, con su nombre,
-precio unitario y la cantidad que el cliente ha pedido.
+Esta clase representa cada plato del menú, con su nombre, precio unitario y la cantidad que el cliente ha pedido.
 """
 class Dish:
     def __init__(self, name: str, price: float):
